@@ -1,0 +1,450 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins';/*
+    the margin and padding part is zero becuase it cover the hole lenght and widht of page
+    font-family state the type what we chosen for the use..
+    */
+ }
+ html{
+  scroll-behavior: smooth;
+ }
+ body{
+  /* here show  the bg color as a white that will enhace the 
+  view and color is white means that the text whatever we
+  write in the bg that will show as white*/
+
+   background: #080808;
+   color: #fff;
+ }
+#header{/* it the first contaner where we puting all the data\]
+  width we provide 100% means that weill cover the parents area 
+  and vh means that will cover according the avalible screen */
+  width: 100%;
+  height: 100vh;
+  background-image: url(secoundimage.jpg);
+  background-size: cover;
+  background-position: center;
+  /* bg position we set as center the */
+
+}
+.container{
+  /* this is secound box that make space between container 
+  for smoothness*/
+  padding: 10px 10%;
+}
+nav{/*
+  now make navigation means to jump direct to the content
+  now we need to make flex the display to put according to
+  our need for that we use display flex
+  agline items and justify content to put content in center 
+  having space accroding to it
+  (flex-wrap it's work cross axis means the xaxis )
+  */
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+.logo{
+  /* width of logo */
+  width: 140px;
+}
+nav ul li{
+  /* here  the nav part will set in one block */
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration:none;
+  font-size:18px;
+  position: relative;
+
+}
+nav ul li a::after{
+  /* now is to put some animation on the navigation 
+  after means that it will how after the content 
+  here content part is empty 
+   we chose the line for animation so height 
+   color and where it start from and where it 
+   will located we chosen this
+   ( frist we provide the width 100% now we turn as 
+   0 and we will show this in hover effect)*/
+
+  content: '';
+  width: 0%;
+  height:3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  
+}
+ nav ul li a:hover::after{
+  /* now the width show it's magic  */
+  width: 100%;
+ }
+.header-text{/* this for "basic designer*/
+  margin-top: 20px;
+  font-size: 30px;
+}
+.header-text h1{/* this for i'm sagar*/
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  /* now change the color of my name*/
+  color: #ff004f;
+}
+/* About section*/
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{/* for  puting the content according to us  we use flex and wrap*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{/* it's means the widht of coloum is 35%*/
+  flex-basis: 35%;
+}
+.about-col-1 img{/* size and widht of image*/
+  border-radius: 15px;
+  width: 100%;
+}
+ .about-col-2{ /* it show the space between image and word(about)*/
+  flex-basis: 60%;
+ }
+ .sub-litle{ /* size of about me*/
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+ }
+ .tab-titles{  /* here the ( skill  education and experice )
+  will adjust with margin of ...*/
+  display: flex;
+  margin-right: 20px 0 40px;
+
+ }
+ .tab-links{ /* now we put the margin and size of (skill edu andex)
+  here and going give animation that why we postion of */
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+ }
+
+
+ .tab-links::after{
+  /*  this for the under line of (skill)*/
+  content: '';
+  height:3px;
+  width: 0;
+  background: #ff004f;
+  position: absolute; 
+ left: 0;  
+ bottom: -8px;
+ transition: 0.5s;
+}
+.tab-links.active-link::after{
+  /* its is the effect*/
+  width: 50%;
+}
+
+.tab-contents ul li{
+  /* here style the list and provide margin*/
+ list-style: none;
+ margin: 10px 0;
+}
+.tab-contents ul li span{
+  /* it will add the color and decress the font size*/
+  color: #b54769;
+  font-size: 14px;
+}
+.tab-contents{/* here we hide the content */
+  display: none;
+}
+
+.tab-contents.active-tab{/* now it will allow to show any skil part*/
+  display: block;
+}
+/* now we make it clickable*/
+
+#services{
+  /*now the servies parts that what i can able to desing or make 
+  here we provide padding form the privious box or container*/
+  padding: 30px 0;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div{
+  background: #262626;
+  padding: 40px;
+  font-weight: 13px;
+  font-weight: 300px;
+  border-radius: 10px;
+  transition: background 0.5s ,transform 0.5s;
+  border-radius: 10px;
+
+}
+.services-list div i{
+   font-size: 50px;
+   margin-bottom:  30px;
+
+}
+.services-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+ margin-bottom: 15px;
+}
+.services-list div a{
+  text-decoration:none;
+  color:#fff;
+  font-size:12px;
+  margin-top: 20px;
+  display: inline-block;
+
+}
+.services-list div:hover{
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+/*portfolio*/
+#portfolio{
+  padding: 50px 0;
+}
+
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+}
+.layer{
+  width: 100%;
+  height:0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+
+}
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition:  background 0.5s;
+
+}
+.btn:hover{
+  background: #ff004f;
+}
+/* contact*/
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis:  60%;
+}
+.contact-left p{
+  margin-top: 30px;
+
+}
+.contact-left p i{
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+social-icon{
+  margin-top: 40px;
+
+}
+.social-icon a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icon a :hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  display: inline-block;
+  background: #ff004f;
+}
+.contact-right form{
+  width: 100%;
+
+}
+form input,form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color:#fff;
+  font-size: 18;
+  border-radius: 6px;
+
+}
+ form btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+
+ }
+ .copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+ }
+ .copyright i{
+  color: #ff004f;
+ }
+ /* css for media quary*/
+
+  nav .fas{
+    display: none;
+  }
+
+  #menubar {
+    display: none;
+  }
+ @media only screen and (max-width:600px){
+  #menubar {
+    display: block;
+  }
+  #header{
+    background-image: url(fristimage.jpg);
+  }
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  nav .fas{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+     z-index: 5;
+      transition: 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+
+  }
+  .sub-litle{
+    font-size: 40px;
+
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+
+ }
