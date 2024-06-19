@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Potfolio</title>
+ <link rel="stylesheet" href="portfolio.css">
+ <script src="https://kit.fontawesome.com/335f8d4594.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="">
+                  <ul id="sidemenu">
+                      <li><a href="#header">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#services">services</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li id="menubar"><i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i></li>
+                  </ul>
+                    <i id="menubar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                  <p> Beginner Designer</p>
+                    <h1> Hi,.. I'm <span >Sagar sahu</span>  <br> Gita autonomus college</h1>
+            </div>
+        </div>
+     </div>
+    <!-- it's for the secound image and about section-->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myimage1.jpg" alt="">
+                </div>
+                   <div class="about-col-2">
+                        <h1  class="sub-title">About Me</h1>
+                          <p>Hello! I'm a multifaceted professional with a passion for data analysis,
+                           web development, and emerging technologies like generative AI. With expertise in interpreting complex data,
+                           crafting responsive web solutions, and exploring AI's creative potential, 
+                           I'm committed to blending innovation with practical application to drive impactful results.</p>
+                                    <br>
+<!-- here we make it clickable so we added onclick -->
+             <div class="tab-titles">
+                   <P class="tab-links  active-link" onclick="opentab('skills')">Skills</P>
+                   <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                   <P class="tab-links" onclick="opentab('education')"> Education</P>
+              </div><br> 
+               <div class="tab-contents  active-tab" id="skills">
+                   <ul>
+                      <li><span> Data Analyst</span><br>Designer Dashboard</li>
+                      <li><span>Web Development </span><br>Web app Development</li>
+                     <li><span> Generative Ai </span><br>Building Knowledge in AI</li>
+                    
+                      </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>1 month</span><br> As a front-end developer</li>
+                    <li><span>2 months </span><br>As a Data Analyst</li>
+                    <li><span>2 months</span><br> As a Big Data Analyst</li>
+                    
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                    <li><span> 2018</span><br>Little angel's scholl
+                                               percentage : 58%</li>
+                    <li><span> 2018-2020</span><br>Brajrajnagar
+                                               percentage : 57%</li>
+                    <li><span> 2021-2025</span><br> Gita autonomus college
+                                                Cgpa : 8 </li>
+                    
+                </ul>
+              
+                </div>
+            </div>
+        </div>
+        
+     </div>
+      <!-- services -->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My services</h1>
+            <div class="services-list">
+               
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desing </h2>
+                <p> As a front-end developer specializing in web design,
+                   I create visually compelling and user-friendly interfaces. With expertise in HTML, CSS, and JavaScript, 
+                  I design responsive layouts and collaborate closely with developers to bring designs to life.
+                   My goal is to enhance user experiences through innovative and functional web solutions.
+                   </p>
+                   <a href="#">learn more</a>
+              </div>
+               <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Data Analyst  </h2>
+                <p>Hello, I'm a data analyst specializing in interpreting and analyzing complex data sets to extract meaningful insights.
+                   Using tools like Python, SQL, and Tableau, I transform raw data into actionable reports and visualizations. 
+                  My work helps organizations make informed decisions and optimize strategies based on data-driven findings.
+                   </p>
+                   <a href="#">learn more</a>
+              </div>
+              <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2> Generative AI </h2>
+                <p>Hello! I'm diving into the world of Generative AI as a learner, 
+                  exploring its potential in generating creative content and solving complex problems. 
+                  Through experimentation with models like GPT-3, I aim to understand how AI can innovate various fields from art to technology,
+                   driven by curiosity and a passion for innovation.</p>
+                   <a href="#">learn more</a>
+              </div>
+
+
+            </div>
+        </div>
+      </div>  
+      <!--portfolio
+      -->   
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title"> My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from  play <store class=""></store>
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" alt="">
+            <div class="layer">
+              <h3>Music  App</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from  play <store class=""></store>
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" alt="">
+            <div class="layer">
+              <h3>Shopping app</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from  play <store class=""></store>
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+     </div>
+       <!-- contact-->
+       <div id="contact">
+        <div class="container">
+          <div class="row">
+           
+            <div class="contact-left">
+              <h1 class="sub-title" >Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>sagarsahu8624@gmail.com</p>
+              <p> <i class="fa-sharp fa-solid fa-phone-volume"></i>8328822719</p>
+              <div class="social-icon">
+                
+                <a href="https://www.facebook.com/rj.king.5602?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mr_sagar1611?igsh=czZuM21hMzhlY213"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/mr_sagar1611?igsh=czZuM21hMzhlY213"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sagar-sahu-b00944272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                
+              </div>
+              <a href="Sagar_Resume (1).pdf" download class="btn btn2">Download CV</a>
+            
+            </div>
+            <div class="contact-right">
+              <form>
+              <input type="text " name="Name" placeholder=" Your name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </div>
+
+          </div>
+        </div>
+         <div class="copyright">
+          <p> Copyright @ sagar<i class="fa-regular fa-message-heart"></i> </p>
+         </div>
+       </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <!--Yaha pe kuch galti hain-->
+       <script>
+           var tablinks=document.getElementsByClassName("tab-skills")
+           var tabcontents=document.getElementsByClassName(" tab-contents")
+           function opentab(tabname)
+           
+           {
+              for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+              }
+              for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+               }
+                 
+              event.currentTarget.classList.add("active-link")
+              document.getElementById(tabname).classList.add("active-tab")
+           }
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right ="0"
+        }
+        function closemenu(){
+          sidemenu.style.right ="-200px"
+        }
+       </script>
+</body>
+</html>
